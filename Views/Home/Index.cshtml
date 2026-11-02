@@ -1,0 +1,131 @@
+﻿
+@{
+    ViewData["Title"] = "Inicio";
+}
+
+<header id="inicio" class="inicio text-center">
+    <div class="container">
+        <h1>¡Bienvenido a Danza Viva!</h1>
+
+        <p>
+            Descubre tu pasión por el baile y aprende
+            a expresarte a través del movimiento.
+        </p>
+
+        <a href="#clases" class="btn btn-principal">
+            Conoce nuestras clases
+        </a>
+    </div>
+</header>
+
+<section id="clases" class="container my-5">
+
+    <h2 class="text-center mb-4">Nuestras clases</h2>
+
+    <div class="row g-4">
+
+        <div class="col-md-4">
+            <div class="card tarjeta h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Ballet</h5>
+                    <p class="card-text">
+                        Técnica, equilibrio y elegancia.
+                    </p>
+                    <p><strong>Nivel:</strong> Principiante</p>
+                    <p><strong>Horario:</strong> Lunes, 4:00 p. m.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card tarjeta h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Salsa</h5>
+                    <p class="card-text">
+                        Disfruta del ritmo y aprende nuevos pasos.
+                    </p>
+                    <p><strong>Nivel:</strong> Principiante</p>
+                    <p><strong>Horario:</strong> Miércoles, 5:00 p. m.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card tarjeta h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Danza contemporánea</h5>
+                    <p class="card-text">
+                        Expresa emociones mediante el movimiento.
+                    </p>
+                    <p><strong>Nivel:</strong> Intermedio</p>
+                    <p><strong>Horario:</strong> Viernes, 4:00 p. m.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="profesores" class="container my-5">
+
+    <h2 class="text-center mb-4">Nuestros profesores</h2>
+
+    <div class="row g-4">
+
+        <div class="col-md-4">
+            <div class="card tarjeta h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Ballet</h5>
+                    <p class="card-text">
+                        <strong>Nombre:</strong> Laura Gómez
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card tarjeta h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Salsa</h5>
+                    <p class="card-text">
+                        <strong>Nombre:</strong> Andrés Pérez
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card tarjeta h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Danza contemporánea</h5>
+                    <p class="card-text">
+                        <strong>Nombre:</strong> Camila Torres
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="inscripcion" class="container my-5 text-center">
+
+    <div class="formulario p-4">
+
+        <h2 class="mb-3">¿Quieres formar parte de Danza Viva?</h2>
+
+        <p>
+            Elige tu clase favorita y comienza a disfrutar
+            del mundo de la danza.
+        </p>
+
+        <a asp-controller="Inscripcion"
+           asp-action="Index"
+           class="btn btn-principal">
+            Inscríbete ahora
+        </a>
+
+    </div>
+
+</section>
+

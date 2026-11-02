@@ -1,0 +1,46 @@
+@model EscuelaDanzaMVC.Models.Inscripcion
+
+@{
+    ViewData["Title"] = "Inscripción exitosa";
+}
+
+<section class="container my-5">
+
+    <div class="formulario p-4 mx-auto text-center"
+         style="max-width: 600px;">
+
+        <h2 class="mb-4">¡Inscripción exitosa!</h2>
+
+        <p>Gracias por tu interés en Danza Viva.</p>
+
+        <div class="card tarjeta mt-4">
+
+            <div class="card-body">
+
+                <h5 class="card-title">
+                    Datos de tu inscripción
+                </h5>
+
+                <p>
+                    <strong>Nombre del estudiante:</strong>
+                    @Model.Nombre
+                </p>
+
+                <p>
+                    <strong>Clase seleccionada:</strong>
+                    @Model.Clase
+                </p>
+
+            </div>
+
+        </div>
+
+        <a asp-controller="Home"
+           asp-action="Index"
+           class="btn btn-principal mt-4">
+            Volver al inicio
+        </a>
+
+    </div>
+
+</section>
